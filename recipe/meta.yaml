@@ -1,5 +1,5 @@
 {% set name = "metatensor-torch" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/metatensor_torch-{{ version }}.tar.gz
-  sha256: d5180d90e9645d604d7e4817737298565d9d4a95aff7ad9e6407d3b9a5376b13
+  sha256: bcc23b535e5b86c0d49096cbf73de67141896f4f14c114515d97b936a78353a1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
   script_env:
     # Don't build metatensor-torch, but use the already compiled `libmetatensor-torch`
     # package
