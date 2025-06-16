@@ -3,7 +3,7 @@ About python-metatensor-torch-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-metatensor-torch-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/lab-cosmo/metatensor
+Home: https://github.com/metatensor/metatensor
 
 Package license: BSD-3-Clause
 
@@ -29,38 +29,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.10.____cpython</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.13.____cp313</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=25395&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-metatensor-torch-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -216,6 +188,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-metatensor--torch-green.svg)](https://anaconda.org/conda-forge/metatensor-torch) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/metatensor-torch.svg)](https://anaconda.org/conda-forge/metatensor-torch) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/metatensor-torch.svg)](https://anaconda.org/conda-forge/metatensor-torch) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/metatensor-torch.svg)](https://anaconda.org/conda-forge/metatensor-torch) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-python--metatensor--torch-green.svg)](https://anaconda.org/conda-forge/python-metatensor-torch) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-metatensor-torch.svg)](https://anaconda.org/conda-forge/python-metatensor-torch) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-metatensor-torch.svg)](https://anaconda.org/conda-forge/python-metatensor-torch) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-metatensor-torch.svg)](https://anaconda.org/conda-forge/python-metatensor-torch) |
 
 Installing python-metatensor-torch
@@ -228,41 +201,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-metatensor-torch` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `metatensor-torch, python-metatensor-torch` can be installed with `conda`:
 
 ```
-conda install python-metatensor-torch
-```
-
-or with `mamba`:
-
-```
-mamba install python-metatensor-torch
-```
-
-It is possible to list all of the versions of `python-metatensor-torch` available on your platform with `conda`:
-
-```
-conda search python-metatensor-torch --channel conda-forge
+conda install metatensor-torch python-metatensor-torch
 ```
 
 or with `mamba`:
 
 ```
-mamba search python-metatensor-torch --channel conda-forge
+mamba install metatensor-torch python-metatensor-torch
+```
+
+It is possible to list all of the versions of `metatensor-torch` available on your platform with `conda`:
+
+```
+conda search metatensor-torch --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search metatensor-torch --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search python-metatensor-torch --channel conda-forge
+mamba repoquery search metatensor-torch --channel conda-forge
 
-# List packages depending on `python-metatensor-torch`:
-mamba repoquery whoneeds python-metatensor-torch --channel conda-forge
+# List packages depending on `metatensor-torch`:
+mamba repoquery whoneeds metatensor-torch --channel conda-forge
 
-# List dependencies of `python-metatensor-torch`:
-mamba repoquery depends python-metatensor-torch --channel conda-forge
+# List dependencies of `metatensor-torch`:
+mamba repoquery depends metatensor-torch --channel conda-forge
 ```
 
 
@@ -332,6 +305,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@HaoZeke](https://github.com/HaoZeke/)
 * [@Luthaf](https://github.com/Luthaf/)
 * [@PicoCentauri](https://github.com/PicoCentauri/)
 
