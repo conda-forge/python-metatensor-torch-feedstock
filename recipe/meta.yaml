@@ -17,6 +17,9 @@ outputs:
     version: {{ version }}
 
     build:
+      ignore_run_exports:
+        - libtorch
+        - pytorch
       script: python -m pip install . -vv --no-deps --no-build-isolation
       script_env:
         # Don't build metatensor-torch, but use the already compiled `libmetatensor-torch`
