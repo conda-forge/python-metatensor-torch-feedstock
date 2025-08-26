@@ -48,12 +48,12 @@ outputs:
         - pytorch
         - pip
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.1.13,<0.2.0
+        - python-metatensor-core >=0.1.15,<0.2.0
       run:
         - python
         - pytorch
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.1.13,<0.2.0
+        - python-metatensor-core >=0.1.15,<0.2.0
         - python-vesin
 
     test:
