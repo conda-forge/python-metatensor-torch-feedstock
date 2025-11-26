@@ -13,7 +13,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-aarch64:alma9
 libtorch:
-- '2.8'
+- '2.9'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -21,6 +21,6 @@ pin_run_as_build:
 python:
 - 3.10.* *_cpython
 pytorch:
-- '2.8'
+- '2.9'
 target_platform:
 - linux-aarch64
