@@ -1,5 +1,5 @@
 {% set name = "metatensor-torch" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/metatensor_torch-{{ version }}.tar.gz
-  sha256: 9b0907f0969bd2139a6ab3614d81faebc7abca102df4127cba9f0521e2e1437d
+  sha256: 0b2e158e8b31f12735bf2db391257296a5ef0b802512f2d2db8e0c5ee028a192
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: python-{{ name|lower }}
