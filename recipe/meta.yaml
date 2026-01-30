@@ -10,7 +10,7 @@ source:
   sha256: 0b2e158e8b31f12735bf2db391257296a5ef0b802512f2d2db8e0c5ee028a192
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: python-{{ name|lower }}
