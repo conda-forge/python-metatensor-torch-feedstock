@@ -40,21 +40,20 @@ outputs:
         - python
         - setuptools >=77
         - packaging >=23
-        # We build against the CPU version of torch to not have to deal with CUDA compilers
-        # (torch's CMake targets tries to find CUDA compilers even when there is no CUDA
-        # code to build). This does not impact the `run` dependency, since torch's
-        # `run_exports` are variant agnostic
+        # We build against the CPU version of torch to not have to deal with
+        # CUDA compilers (torch's CMake targets tries to find CUDA compilers
+        # even when there is no CUDA code to build). This does not impact the
+        # `run` dependency, since torch's `run_exports` are variant agnostic
         - libtorch * cpu*
         - pytorch
         - pip
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.1.19,<0.2.0
+        - python-metatensor-core >=0.2.0,<0.3
       run:
         - python
         - pytorch
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.1.19,<0.2.0
-        - python-vesin
+        - python-metatensor-core >=0.2.0,<0.3
 
     test:
       imports:
@@ -75,8 +74,8 @@ outputs:
       run:
         - libmetatensor-torch {{ version }}
         - python-metatensor-torch {{ version }}
-        - python-metatensor-operations >=0.4.0,<0.5.0
-        - python-metatensor-learn >=0.4.0,<0.5.0
+        - python-metatensor-operations >=0.5.0,<0.6
+        - python-metatensor-learn >=0.5.0,<0.6
 
     test:
       imports:
