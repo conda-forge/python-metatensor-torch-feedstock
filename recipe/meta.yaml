@@ -45,6 +45,7 @@ outputs:
         # even when there is no CUDA code to build). This does not impact the
         # `run` dependency, since torch's `run_exports` are variant agnostic
         - libtorch * cpu*
+        - libtorch
         - pytorch
         - pip
         - libmetatensor-torch {{ version }}
