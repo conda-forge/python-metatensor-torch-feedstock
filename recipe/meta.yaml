@@ -49,12 +49,12 @@ outputs:
         - pytorch
         - pip
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.2.2,<0.3
+        - python-metatensor-core >=0.2.7,<0.3
       run:
         - python
         - pytorch
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.2.2,<0.3
+        - python-metatensor-core >=0.2.7,<0.3
 
     test:
       imports:
@@ -75,8 +75,8 @@ outputs:
       run:
         - libmetatensor-torch {{ version }}
         - python-metatensor-torch {{ version }}
-        - python-metatensor-operations >=0.5.0,<0.6
-        - python-metatensor-learn >=0.5.0,<0.6
+        - python-metatensor-operations >=0.5.1,<0.6
+        - python-metatensor-learn >=0.6.3,<0.7
 
     test:
       imports:
