@@ -1,5 +1,5 @@
 {% set name = "metatensor-torch" %}
-{% set version = "0.10.8" %}
+{% set version = "0.10.9" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/metatensor_torch-{{ version }}.tar.gz
-  sha256: 31426d0a5934f21d3734cec6085555377143406e91798a5bf51505d017b66050
+  sha256: e7458b9c63c5e40145b3778a6f003564a45d83a5cb0021a6a9963c6e0a82bb04
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: python-{{ name|lower }}
@@ -49,12 +49,12 @@ outputs:
         - pytorch
         - pip
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.2.2,<0.3
+        - python-metatensor-core >=0.2.7,<0.3
       run:
         - python
         - pytorch
         - libmetatensor-torch {{ version }}
-        - python-metatensor-core >=0.2.2,<0.3
+        - python-metatensor-core >=0.2.7,<0.3
 
     test:
       imports:
@@ -75,8 +75,8 @@ outputs:
       run:
         - libmetatensor-torch {{ version }}
         - python-metatensor-torch {{ version }}
-        - python-metatensor-operations >=0.5.0,<0.6
-        - python-metatensor-learn >=0.5.0,<0.6
+        - python-metatensor-operations >=0.5.1,<0.6
+        - python-metatensor-learn >=0.6.3,<0.7
 
     test:
       imports:
